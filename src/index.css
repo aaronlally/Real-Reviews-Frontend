@@ -1,0 +1,469 @@
+/* body {
+   background-image: linear-gradient(to right, rgba(243, 14, 212, 0), rgb(64, 107, 248));
+} */
+
+#noReviews {
+   margin-left: 32.2vw;
+}
+
+input {
+   caret-color: red;
+   box-shadow: 8px 8px 20px #cbced1, -14px -14px 20px white;
+   border-radius: 20px;
+   box-sizing: border-box;
+   background: #ecf0f3;
+   outline: none;
+}
+
+input::placeholder {
+   color: gray;
+ }
+
+
+#gameName {
+   color:rgb(39, 29, 48)
+}
+
+#reviewCardEdit {
+   margin-top: 1em;
+   margin-bottom: 1em;
+   border-radius: 30%;
+}
+
+#reviewCardDelete {
+   margin-bottom: 1em;
+   border-radius: 30%;
+}
+
+#reviewCard {
+   border-style:double;
+   border-color:rgb(94, 96, 207);
+   width: 30em;
+   margin-left: -2.0vw;
+}
+
+#navBar {
+   margin-top: -3.5vw;
+   margin-bottom: 3%;
+   padding-top: 3%;
+   padding-bottom: 3%;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.active {
+    background-color: rgb(154, 187, 231);
+    border-style: none;
+   color: white;
+  }
+
+ .other {
+    border-style: none;
+ }
+
+ #logoutButton {
+   position: absolute;
+   display:flex;
+   margin-left: 90%;
+   margin-top: -.3%;
+   background-color:white;
+   border-style: none;
+   color: black;
+   text-align: center;
+   font-size: 16px;
+   transition: 0.3s;
+}
+
+#logoutButton:hover {
+   transform: scale(1.10);
+   transition: transform .3s;
+   background-color: #d43e33;
+   color: white;
+   border-style:outset;
+}
+
+ #reviewcardGame:hover {
+    transform: scale(1.22);
+    transition: transform .9s;
+ }
+
+ #gameCardImg:hover {
+    transform: scale(1.1);
+    transition: transform .9s;
+ }
+
+ .gameEditDelete:hover {
+    transform: scale(1.20);
+    transition: transform .6s;
+    background-color: #c5281d;
+    color: white;
+ }
+
+ .gameEditDelete {
+    background-color:white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 15%;
+ }
+
+ .devName {
+    color: red;
+ }
+ #reviewTitle {
+    color: rgb(94, 96, 207);
+ }
+
+ #gameCardName {
+    color: rgb(104, 104, 218);
+ }
+
+ /* input[type=text] {
+    width: auto;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    height: 1em;
+  }
+
+ button[type="submit"] { 
+    border-color: rgb(50, 52, 143);
+} */
+
+
+#username {
+   padding:10px;
+   padding-left:.20%;
+}
+#pass {
+   margin-left: .5em;
+   padding-right: -5em;
+}
+
+#loginButton {
+   display:block;
+    padding:.5em 1.4em;
+    margin-top:2em;
+    margin-left:-.6em;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color:#3369ff;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+}
+
+#signUp {
+   display:block;
+   padding:.5em 1.4em;
+   margin-top:2em;
+   margin-left:-.6em;
+   border-radius:0.35em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-family:'Roboto',sans-serif;
+   text-transform:uppercase;
+   font-weight:400;
+   color:#FFFFFF;
+   background-color:#4b6688;
+   box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+   text-align:center;
+   position:relative;
+}
+
+#gameCard {
+   border-style: double;
+   width: 50em;
+   border-color: blue;
+   margin-left: -.8vw;
+}
+
+#gameCardImg {
+   padding: 2em;
+   max-width: 45em;
+   max-height: 50em;
+}
+
+#gameCardEditButton {
+   margin-bottom: 1em;
+   border-radius: 30%;
+}
+
+#gameCardDeleteButton {
+   margin-bottom: 1em;
+   border-radius: 30%;
+}
+
+#reviewcardGame {
+   max-width: 25em;
+   max-height: 35em;
+}
+
+.profileButtons {
+   background-color:white;
+   border: none;
+   color: black;
+   text-align: center;
+   font-size: 16px;
+   transition: 0.3s;
+   border-style:outset;
+   margin-top: 17%;
+   margin-right: 5%;
+}
+
+.profileButtons:hover {
+   transform: scale(1.10);
+   transition: transform .6s;
+   background-color: #d43e33;
+   color: white;
+   border-style:outset;
+}
+
+#profilee {
+   background-color: rgb(255, 255, 255);
+   border-style:ridge;
+   margin-left: 30vw;
+   margin-right: 45vw;
+   margin-top: -6%;
+   margin-bottom: 10%;
+   font-size:xx-large;
+   font-weight:bold;
+   background-color: rgb(67, 67, 100);
+   color: white;
+}
+
+#profile {
+   margin-left: 10.5vw;
+}
+
+#profileb2 {
+   margin-left: 27.9vw;
+}
+
+#profileb1 {
+margin-left: 1%;
+}
+
+#usersname {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 5%;
+   margin-left: 34%;
+   color: red;
+   border-style:groove;
+   margin-right: 45vw;
+   border-width: .002vw;
+}
+#usaname {
+   margin-left: 38.3%;
+}
+
+#firstName {
+   margin-left: 3.8vw;
+   margin-right: 72.5vw;
+   color: red;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-style:groove;
+   border-width: .002vw;
+}
+
+#firstname {
+margin-left: 7.3vw;
+}
+
+#lastname {
+   margin-left: 60vw;
+   margin-top: -5.95%;
+}
+
+#lastName {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 56.5vw;
+   color: red;
+   border-style: groove;
+   border-width: .002vw;
+   margin-right: 20vw;
+}
+
+#ReviewTitleCard {
+   background-color: rgb(255, 255, 255);
+   border-style:ridge;
+   margin-left: 32.5%;
+   margin-right: 35%;
+   margin-top: -2%;
+   margin-bottom: 4%;
+   font-size:xx-large;
+   font-weight:bold;
+   background-color: rgb(67, 67, 100);
+   color: white;
+}
+
+#gameTitleCard {
+   background-color: rgb(255, 255, 255);
+   border-style:ridge;
+   margin-left: 32.5%;
+   margin-right: 35%;
+   margin-top: -2%;
+   margin-bottom: 4%;
+   font-size:xx-large;
+   font-weight:bold;
+   background-color: rgb(67, 67, 100);
+   color: white;
+}
+
+#gamerCard {
+   margin-left: -1.9vw;
+}
+
+#devCardEdit {
+   margin-bottom: .5vw;
+}
+
+#devCard {
+   border-style: double;
+   width: 28vw;
+   height: 18vw;
+   margin-left: -2vw;
+   border-color: blue;
+}
+
+.mastHead {
+   font-weight: bolder;
+   font-size: 1.9vw;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-shadow: 2px 3px rgb(52, 54, 197);
+   background: blue;
+   margin-right: 87.1vw;
+   color: white;
+   margin-left: .3vw;
+   border-radius: 5%;
+}
+
+#devMastHead {
+   background-color: rgb(255, 255, 255);
+   border-style:ridge;
+   margin-left: 32.5%;
+   margin-right: 35%;
+   margin-top: -2%;
+   margin-bottom: 4%;
+   font-size:xx-large;
+   font-weight:bold;
+   background-color: rgb(67, 67, 100);
+   color: white;
+}
+
+#createMastHead {
+   background-color: rgb(255, 255, 255);
+   border-style:ridge;
+   margin-left: 32.5%;
+   margin-right: 35%;
+   margin-top: -2%;
+   margin-bottom: 4%;
+   font-size:xx-large;
+   font-weight:bold;
+   background-color: rgb(67, 67, 100);
+   color: white;
+}
+
+.addStuff {
+   margin-left: -1.8vw;
+}
+
+#review {
+   margin-right: 2vw;
+}
+#game {
+   margin-right: 2vw;
+}
+
+/* add review form */
+#addFormm {
+   margin-top: 5vw;
+   margin-bottom: 5vw;
+}
+
+/* add game form */
+#addForm {
+   margin-top: 5vw;
+   margin-bottom: 5vw;
+}
+
+#addDeveloperForm {
+   margin-top: 5vw;
+   margin-bottom: 5vw;
+}
+
+select {
+   outline: 0;
+   background: rgb(255, 255, 255);
+   background-image: none;
+   width: 10vw;
+   height: 1vw;
+   color: black;
+   cursor: pointer;
+   border: 1px solid black;
+   border-radius: 3px;
+}
+
+#profileReviewButton {
+   display: flex;
+   margin-top: -15vw;
+   margin-left: 34.2vw;
+   border-radius: 10%;
+   padding: .2vw;
+   border-style:outset;
+   background-color:white;
+   border: none;
+   color: black;
+   text-align: center;
+   font-size: 16px;
+   transition: 0.3s;
+   border-style:outset;
+}
+
+#profileReviewButton:hover {
+   transform: scale(1.10);
+   transition: transform .6s;
+   background-color: #d43e33;
+   color: white;
+   border-style: none;
+   
+}
+
+#hellaButtonIds {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -1.5vw;
+   margin-left: 30vw;
+}
+
+#profileReviews {
+
+  }
+
+  #username {
+   margin: .5%;
+  }
+
+  #password {
+   margin: .8%;
+  }
+
+  #signupSection {
+   margin-top: 10%;
+  }
