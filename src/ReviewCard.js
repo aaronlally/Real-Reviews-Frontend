@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {useHistory} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import EditPopUp from "./EditPopUp"
 import DeletePopUp from "./DeletePopUp"
 
@@ -21,7 +21,7 @@ const year = dateObj.getUTCFullYear();
 const theDate = `${month}/${day}/${year}`
 
     
-    const history = useHistory()
+    const history = useNavigate()
 
     function handleReviewDelete() {
         fetch(`/reviews/${review.id}`, { method: "DELETE" }).then((r) => {

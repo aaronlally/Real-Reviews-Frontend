@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import {useHistory} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import EditPopUp from "./EditPopUp"
 import DeletePopUp from "./DeletePopUp"
 
 function DevCard({ dev }) {
 
-    const history = useHistory()
+    const history = useNavigate()
     const [showEditDev, setShowEditDev] = useState(false)
 
     const [devName, setDevName] = useState("")

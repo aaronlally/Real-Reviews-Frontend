@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {useHistory} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import EditPopUp from "./EditPopUp"
 import DeletePopUp from "./DeletePopUp"
 
@@ -15,7 +15,7 @@ function GameCard({ game }) {
     const [gameDev, setGameDev] = useState()
     const [devs, setDevs] = useState([])
     const [currentGame, setCurrentGame] = useState(game)
-    const history = useHistory()
+    const history = useNavigate()
     const [isShown, setIsShown] = useState(false)
     const [isShownnn, setIsShownnn] = useState(false)
 

@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
-import { Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Login from "./Login";
 import Home from "./Home";
 import GameContainer from "./GameContainer";
@@ -69,26 +69,14 @@ setDevList([...devList, newDev])
   return (
     <div className="App">
       <Navbar user={user} setUser={setUser}/>
-      <Switch>
-        <Route exact path="/login">
-            <Login setUser={setUser}/>
-        </Route>
-        <Route exact path="/">
-            <Home user={user} reviewList={reviewList} />
-        </Route>
-        <Route exact path="/games">
-            <GameContainer gameList={gameList}/>
-        </Route>
-        <Route exact path="/devs">
-            <DevContainer devList={devList}/>
-        </Route>
-        <Route exact path="/profile">
-            <Profile user={user} setUser={setUser} />
-        </Route>
-        <Route exact path="/new">
-            <AddStuff handleAddDeveloper={handleAddDeveloper} handleAddGame={handleAddGame} handleAddReview={handleAddReview} user={user}/>
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/login" element={<Login setUser={setUser} />}   />
+        <Route exact path="/" element={<Home user={user} reviewList={reviewList} />}   />
+        <Route exact path="/games" element={<GameContainer gameList={gameList}/>}   />
+        <Route exact path="/devs" element={<DevContainer devList={devList}/>}   />
+        <Route exact path="/profile" element={<Profile user={user} setUser={setUser} />}   />
+        <Route exact path="/new" element={<AddStuff handleAddDeveloper={handleAddDeveloper} handleAddGame={handleAddGame} handleAddReview={handleAddReview} user={user}/>}   />
+      </Routes>
     </div>
   );
 }

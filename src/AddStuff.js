@@ -1,26 +1,26 @@
 import React, { useState, useEffect } from "react";
-import {useHistory} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function AddStuff({ user, handleAddReview, handleAddGame, handleAddDeveloper }) {
 
-    const [addReview, setAddReview] = useState(false)
-    const [addGame, setAddGame] = useState(false)
-    const [games, setGames] = useState([])
-    const [gameId, setGameId] = useState()
-    const [title, setTitle] = useState("")
-    const [content, setContent] = useState("")
-    const [devs, setDevs] = useState([])
-    const history = useHistory()
-    const [gameName, setGameName] = useState("")
-    const [gameYear, setGameYear] = useState()
-    const [gameGenre, setGameGenre] = useState("")
-    const [multiplayer, setMultiplayer] = useState(true)
-    const [gameImage, setGameImage] = useState("")
-    const [gamePlatform, setGamePlatform] = useState("")
-    const [gameDev, setGameDev] = useState()
-    const [addDev, setAddDev] = useState(false)
-    const [devName, setDevName] = useState("")
-    const [devYear, setDevYear] = useState()
+    const [addReview, setAddReview] = useState(false);
+    const [addGame, setAddGame] = useState(false);
+    const [games, setGames] = useState([]);
+    const [gameId, setGameId] = useState();
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
+    const [devs, setDevs] = useState([]);
+    const history = useNavigate();
+    const [gameName, setGameName] = useState("");
+    const [gameYear, setGameYear] = useState();
+    const [gameGenre, setGameGenre] = useState("");
+    const [multiplayer, setMultiplayer] = useState(true);
+    const [gameImage, setGameImage] = useState("");
+    const [gamePlatform, setGamePlatform] = useState("");
+    const [gameDev, setGameDev] = useState();
+    const [addDev, setAddDev] = useState(false);
+    const [devName, setDevName] = useState("");
+    const [devYear, setDevYear] = useState();
 
 
     useEffect(()=>{
